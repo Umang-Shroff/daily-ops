@@ -23,26 +23,47 @@ const NewsFeed = () => {
   }, []);
 
   return (
-    <div className="container mx-auto p-4 md:p-8">
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">Headlines</h1>
+    <div className="min-h-screen bg-[#f5f2ee] text-[#1a1a1a] px-4 py-6 md:px-12 lg:px-20 font-sans">
+      <div className="flex justify-between items-center mb-8">
+        
+        <h1 className="text-4xl font-extrabold tracking-tight text-[#2b2b2b]">Headlines</h1>
+        <button
+          onClick={()=>{window.location.reload()}}
+          className="flex items-center gap-2 cursor-pointer text-sm bg-[#e4dfd9] hover:bg-[#d3cdc7] text-[#333] px-4 py-2 rounded-xl transition-all duration-300 shadow-md"
+        >
+          <RefreshCw size={16} />
+          Refresh
+        </button>
       </div>
 
       {loading && articles.length === 0 ? (
-        <p className="text-gray-400">Loading tech news...</p>
+        <p className="text-gray-500 text-center">Loading tech news...</p>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
-            <a href={article.url} key={index} target="_blank" rel="noopener noreferrer" className="block bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-sky-500 transition-all duration-200">
-              {/* Conditionally render image if it exists */}
+            <a
+              href={article.url}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl shadow-md border border-[#e0deda] overflow-hidden hover:shadow-xl transition-all duration-300"
+            >
               {article.imageUrl && (
-                <img src={article.imageUrl} alt={article.title} className="w-full h-48 object-cover" />
+                <img
+                  src={article.imageUrl}
+                  alt={article.title}
+                  className="w-full h-48 object-cover rounded-t-2xl"
+                />
               )}
 
-              <div className="p-4">
-                <h2 className="text-lg font-semibold text-white">{article.title}</h2>
-                <p className="text-gray-400 mt-2 text-sm">{article.description}</p>
-                <p className="text-xs text-gray-500 mt-3">{article.source.name} &bull; {new Date(article.publishedAt).toLocaleDateString()}</p>
+              <div className="p-5">
+                <h2 className="text-xl font-semibold text-[#222] leading-snug mb-2 hover:text-[#8833dc] transition-colors duration-200">
+                  {article.title}
+                </h2>
+                <p className="text-sm text-[#666] leading-relaxed line-clamp-3">{article.description}</p>
+                <p className="text-xs text-[#999] mt-4">
+                  {article.source.name} &bull; {new Date(article.publishedAt).toLocaleDateString()}
+                </p>
               </div>
             </a>
           ))}
