@@ -25,11 +25,11 @@ const Sidebar = ({ isOpen, onClose }) => {
 
       {/* Sidebar Panel */}
       <aside
-        className={`fixed top-0 left-0 h-full w-64 bg-white text-[#1a1a1a] z-50 shadow-xl border-r border-[#e0deda] transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-64 bg-white bg-[url('https://www.transparenttextures.com/patterns/climpek.png')] bg-repeat bg-fixed text-[#1a1a1a] z-50 shadow-xl border-r border-[#e0deda] transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="p-5 flex justify-between items-center border-b border-[#e0deda]">
+        <div className="p-5 flex justify-between items-center bg-white border-b border-[#e0deda]">
           <h2 className="text-lg font-bold tracking-tight">Menu</h2>
           <button
             onClick={onClose}
