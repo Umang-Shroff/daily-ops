@@ -18,7 +18,6 @@ const NewsFeed = () => {
     }
   };
 
-  // Fetch news only on the initial component mount
   useEffect(() => {
     fetchNews();
   }, []);
@@ -26,25 +25,25 @@ const NewsFeed = () => {
   return (
     <div className="container mx-auto p-4 md:p-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">Top Headlines</h1>
-        <button
-          onClick={fetchNews}
-          disabled={loading}
-          className="p-2 text-white bg-slate-700 rounded-full hover:bg-slate-600 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          <RefreshCw size={20} className={loading ? 'animate-spin' : ''} />
-        </button>
+        <h1 className="text-3xl md:text-4xl font-bold text-white">Headlines</h1>
       </div>
 
       {loading && articles.length === 0 ? (
-        <p className="text-gray-400">Loading news...</p>
+        <p className="text-gray-400">Loading tech news...</p>
       ) : (
-        <div className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
-            <a href={article.url} key={index} target="_blank" rel="noopener noreferrer" className="block p-4 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors duration-200">
-              <h2 className="text-xl font-semibold text-white">{article.title}</h2>
-              <p className="text-gray-400 mt-2">{article.description}</p>
-              <p className="text-xs text-gray-500 mt-3">{article.source.name} &bull; {new Date(article.publishedAt).toLocaleDateString()}</p>
+            <a href={article.url} key={index} target="_blank" rel="noopener noreferrer" className="block bg-slate-800 rounded-lg overflow-hidden hover:ring-2 hover:ring-sky-500 transition-all duration-200">
+              {/* Conditionally render image if it exists */}
+              {article.imageUrl && (
+                <img src={article.imageUrl} alt={article.title} className="w-full h-48 object-cover" />
+              )}
+
+              <div className="p-4">
+                <h2 className="text-lg font-semibold text-white">{article.title}</h2>
+                <p className="text-gray-400 mt-2 text-sm">{article.description}</p>
+                <p className="text-xs text-gray-500 mt-3">{article.source.name} &bull; {new Date(article.publishedAt).toLocaleDateString()}</p>
+              </div>
             </a>
           ))}
         </div>

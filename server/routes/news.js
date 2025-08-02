@@ -1,16 +1,33 @@
 const express = require('express');
-const axios = require('axios');
+const Parser = require('rss-parser');
 const router = express.Router();
+
+const parser = new Parser({
+  customFields: {
+    item: [
+      ['media:thumbnail', 'mediaThumbnail'],
+      ['media:content', 'mediaContent'],
+    ],
+  },
+});
+
+const FEED_URL = 'https://www.wired.com/feed/rss';
 
 router.get('/', async (req, res) => {
   try {
-    const response = await axios.get(
-      `https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.NEWS_API_KEY}`
-    );
-    console.log("Fetched news articles:", response.data.articles.length, "articles found.");
-    res.json(response.data.articles);
+    const feed = await parser.parseURL(FEED_URL);
+
+    const articles = feed.items.map(item => ({
+      title: item.title,
+      url: item.link,
+      description: item.contentSnippet || item.description || 'No description available.',
+      source: { name: feed.title || 'Wired' },
+      publishedAt: item.isoDate || item.pubDate,
+      imageUrl: item.mediaThumbnail?.$.url || null,
+    }));
+    res.json(articles);
   } catch (error) {
-    console.error(error);
+    console.error('Error fetching RSS feed:', error);
     res.status(500).json({ message: "Error fetching news" });
   }
 });
