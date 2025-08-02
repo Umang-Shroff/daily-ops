@@ -4,6 +4,7 @@ import NewsFeed from './components/NewsFeed';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Trial from './components/Trial';
+import TrainTT from './components/TrainTT';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<NewsFeed />} />
           <Route path="/trial" element={<Trial />} />
+          <Route path="/train" element={<TrainTT />} />
           {/* Example for a future route: <Route path="expenses" element={<ExpenseTracker />} /> */}
         </Route>
       </Routes>
