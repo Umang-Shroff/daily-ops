@@ -2,15 +2,21 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const PORT = process.env.PORT || 5000;
-const app = express();
 
+// Importing routes
+const newsRoutes = require('./routes/news');
+
+const app = express();
 // Middlewares
 app.use(cors()); 
 app.use(express.json()); 
 
+// Routes
+app.use('/api/news', newsRoutes);
+
 // Test Route
 app.get('/api', (req, res) => {
-  res.json({ message: "Hello from the DailyOps backend! 👋" });
+  res.json({ message: "Welcome to DailyOps!" });
 });
 
 app.listen(PORT, () => {
