@@ -33,7 +33,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <h2 className="text-lg font-bold tracking-tight">Menu</h2>
           <button
             onClick={onClose}
-            className="text-[#555] cursor-pointer hover:text-[#8833dc] transition-colors"
+            className="text-[#555] cursor-pointer hover:text-[#6c462c] transition-colors"
           >
             <X size={24} />
           </button>

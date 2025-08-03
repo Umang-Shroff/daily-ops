@@ -48,7 +48,7 @@ const TrainTT = () => {
   return (
     <div className="min-h-screen w-full bg-[#f5f2ee] bg-[url('https://www.transparenttextures.com/patterns/climpek.png')] bg-repeat bg-fixed bg-top font-sans text-[#1a1a1a] px-4 py-6 md:px-12 lg:px-20">
       <div className="flex justify-between mb-6">
-        <div className="flex bg-[#f1e4db] border border-[#d8c0af] rounded-full p-[3px] shadow-md">
+        <div className="flex bg-[#faeee7] border border-[#d8c0af] rounded-full p-[3px] shadow-md">
           <button
             onClick={() => setDirection("BOR")}
             className={`px-5 py-2 text-sm cursor-pointer font-medium rounded-full transition-all duration-200 ${
@@ -71,7 +71,7 @@ const TrainTT = () => {
           </button>
         </div>
         <div
-          className="cursor-pointer duration-300 hover:shadow-md hover:bg-[#fff6f1] rounded-lg px-3 flex justify-center items-center"
+          className="cursor-pointer duration-300 relative right-5 hover:shadow-md hover:bg-[#fff6f1] rounded-lg px-3 flex justify-center items-center"
           onClick={() => setIsMapOpen(true)}
         >
           <Map className="text-[#693b1d]" />
@@ -101,25 +101,25 @@ const TrainTT = () => {
                 ref={(el) => (rowRefs.current[index] = el)}
                 className={`transition-all ${
                   index === highlightIndex
-                    ? "bg-[#fff7e6] hover:bg-[#fff2d1]"
+                    ? "bg-[#fff6f1] hover:bg-[#fff0f0]"
                     : "hover:bg-[#f9fafb]"
                 }`}
               >
-                <td className="px-6 py-4">{train.from}</td>
-                <td className="relative text-gray-400">➝</td>
-                <td className="px-6 py-4">{train.to}</td>
+                <td className="px-6 py-4 font-serif">{train.from}</td>
+                <td className="relative text-gray-400 ">➝</td>
+                <td className="px-6 py-4 font-serif">{train.to}</td>
                 <td className="px-6 py-4 font-semibold text-[#111827]">
-                  {train.time}
+                  {(parseInt(train.time.split(":")[0],10) > 12 ? (parseInt(train.time.split(":")[0],10)-12) : train.time.split(":")[0])}:{train.time.split(":")[1]} {parseInt(train.time.split(":")[0],10) < 12 ? "AM" : "PM"}
                 </td>
                 <td className="px-6 py-4 text-center">
                   <span className="inline-block bg-[#fee9e9] text-[#8B4513] text-xs font-semibold px-4 py-1 rounded-full shadow-sm">
                     {train.platform}
                   </span>
                 </td>
-                <td className="px-6 py-4 capitalize text-[#4b5563]">
+                <td className="px-6 py-4 capitalize font-serif">
                   {train.type}
                 </td>
-                <td className="px-6 py-4 capitalize text-[#4b5563]">
+                <td className="px-6 py-4 capitalize font-serif">
                   {train.train}
                 </td>
               </tr>
@@ -129,29 +129,30 @@ const TrainTT = () => {
       </div>
 
       {isMapOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/30">
-          <div className="relative bg-white rounded-xl shadow-lg max-w-3xl w-full mx-4 md:mx-0 overflow-hidden border border-[#e0deda]">
+        <div className="fixed inset-0 z-50 flex items-start justify-center backdrop-blur-sm bg-black/30 pt-20">
+          <div className="relative bg-white rounded-xl shadow-lg max-w-5xl w-full mx-4 md:mx-0 overflow-hidden border border-[#e0deda]">
             {/* Close Button */}
             <button
               onClick={() => setIsMapOpen(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition"
+              className="cursor-pointer absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition"
             >
               <X size={24} />
             </button>
 
-            {/* Heading */}
             <div className="px-6 pt-6 pb-4 border-b border-[#e0deda]">
               <h1 className="text-4xl font-extrabold tracking-tight text-[#2b2b2b]">
                 Station Map
               </h1>
             </div>
 
-            <div className="p-6 max-h-[80vh] overflow-y-auto">
-              <iframe
-                src={direction==="BOR"?"/map/borivali.png":"/map/parla.png"}
-                title={direction==="BOR"?"Borivali Station:":"Parla Station:"}
-                className="w-full h-[60vh] rounded-lg border border-[#e0deda]"
-              ></iframe>
+            <div className="p-6 max-h-[80vh] overflow-auto flex items-center justify-center">
+              <img
+                src={
+                  direction === "BOR" ? "/map/borivali.png" : "/map/parla.png"
+                }
+                alt={direction === "BOR" ? "Borivali Station" : "Parla Station"}
+                className="object-contain max-w-full max-h-[70vh] rounded-lg border border-[#e0deda]"
+              />
             </div>
           </div>
         </div>

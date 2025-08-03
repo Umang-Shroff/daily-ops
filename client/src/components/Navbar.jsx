@@ -8,12 +8,12 @@ const Navbar = ({ onMenuClick }) => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <button
           onClick={onMenuClick}
-          className="text-[#333] md:ml-10 cursor-pointer hover:text-[#8833dc] transition-colors"
+          className="text-[#333] md:ml-10 cursor-pointer hover:text-[#6c462c] rounded-md hover:bg-[#ece0d8] p-1 transition-colors"
         >
           <Menu size={24} />
         </button>
         <h1
-          className="text-2xl font-extrabold tracking-tight text-[#2b2b2b] md:mr-10 cursor-pointer hover:text-[#8833dc] transition-colors"
+          className="text-2xl font-extrabold tracking-tight text-[#2b2b2b] md:mr-10 cursor-pointer hover:text-[#6c462c] transition-colors"
           onClick={() => {
             navigate("/");
           }}
