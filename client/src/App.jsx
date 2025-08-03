@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Trial from './components/Trial';
 import TrainTT from './components/TrainTT';
+import SOS from './components/SOS';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<NewsFeed />} />
           <Route path="/trial" element={<Trial />} />
           <Route path="/train" element={<TrainTT />} />
+          <Route path="/sos" element={<SOS />} />
           {/* Example for a future route: <Route path="expenses" element={<ExpenseTracker />} /> */}
         </Route>
       </Routes>
