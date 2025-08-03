@@ -1,16 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const TrainTT = () => {
-  const [direction, setDirection] = useState('BOR');
+  const [direction, setDirection] = useState("BOR");
   const [data, setData] = useState([]);
 
   const fetchData = async (dir) => {
     try {
-      const response = await fetch(`/data/${dir === 'BOR' ? 'Borivali' : 'Parla'}.json`);
+      const response = await fetch(
+        `/data/${dir === "BOR" ? "Borivali" : "Parla"}.json`
+      );
       const result = await response.json();
       setData(result);
     } catch (error) {
-      console.error('Failed to fetch train data:', error);
+      console.error("Failed to fetch train data:", error);
     }
   };
 
@@ -20,49 +22,67 @@ const TrainTT = () => {
 
   return (
     <div className="min-h-screen w-full bg-[#f5f2ee] bg-[url('https://www.transparenttextures.com/patterns/climpek.png')] bg-repeat bg-fixed bg-top font-sans text-[#1a1a1a] px-4 py-6 md:px-12 lg:px-20">
-      
-      {/* Tabs */}
-      <div className="flex space-x-4 mb-4 sticky top-0 z-10 bg-[#f5f2ee]/95 backdrop-blur-md py-2 px-1 border-b border-[#d9d4ce]">
-        <button
-          onClick={() => setDirection('BOR')}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-            direction === 'BOR' ? 'bg-[#8833dc] text-white shadow' : 'text-[#444] hover:text-[#8833dc]'
-          }`}
-        >
-          BOR ➝ VP
-        </button>
-        <button
-          onClick={() => setDirection('VP')}
-          className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-            direction === 'VP' ? 'bg-[#8833dc] text-white shadow' : 'text-[#444] hover:text-[#8833dc]'
-          }`}
-        >
-          VP ➝ BOR
-        </button>
+      <div className="flex justify-center mb-6">
+        <div className="flex bg-[#f1e4db] border border-[#d8c0af] rounded-full p-[3px] shadow-md">
+          <button
+            onClick={() => setDirection("BOR")}
+            className={`px-5 py-2 text-sm cursor-pointer font-medium rounded-full transition-all duration-200 ${
+              direction === "BOR"
+                ? "bg-[#844d28] text-white shadow"
+                : "text-[#444] hover:text-[#844d28]"
+            }`}
+          >
+            BOR ➝ VP
+          </button>
+          <button
+            onClick={() => setDirection("VP")}
+            className={`px-5 py-2 text-sm cursor-pointer font-medium rounded-full transition-all duration-200 ${
+              direction === "VP"
+                ? "bg-[#844d28] text-white shadow"
+                : "text-[#444] hover:text-[#844d28]"
+            }`}
+          >
+            VP ➝ BOR
+          </button>
+        </div>
       </div>
 
       {/* Timetable */}
-      <div className="overflow-y-scroll max-h-[70vh] border border-[#e0deda] rounded-xl bg-white shadow-inner">
-        <table className="min-w-full table-fixed text-left text-sm">
-          <thead className="bg-[#f0e9ff] text-[#222] uppercase tracking-wide">
+      <div className="overflow-y-scroll max-h-[70vh] rounded-xl border border-[#e5e7eb] bg-white shadow-md">
+        <table className="min-w-full text-sm text-[#1f2937] relative">
+          {/* Sticky Header */}
+          <thead className="sticky top-0 bg-[#fafafa] z-10 text-xs text-[#693817] uppercase tracking-wider border-b border-[#e5e7eb] shadow-sm">
             <tr>
-              <th className="px-4 py-3">From</th>
-              <th className="px-4 py-3">To</th>
-              <th className="px-4 py-3">Time</th>
-              <th className="px-4 py-3">Platform</th>
-              <th className="px-4 py-3">Type</th>
-              <th className="px-4 py-3">Train</th>
+              <th className="px-6 py-4 text-left font-semibold">From</th>
+              <th className="w-4"></th>
+              <th className="px-6 py-4 text-left font-semibold">To</th>
+              <th className="px-6 py-4 text-left font-semibold">Time</th>
+              <th className="px-6 py-4 text-center font-semibold">Platform</th>
+              <th className="px-6 py-4 text-left font-semibold">Type</th>
+              <th className="px-6 py-4 text-left font-semibold">Train</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#e0deda]">
+
+          <tbody className="divide-y divide-[#f3f4f6]">
             {data.map((train, index) => (
-              <tr key={index} className="hover:bg-[#f9f6ff] transition-all duration-200">
-                <td className="px-4 py-3">{train.from}</td>
-                <td className="px-4 py-3">{train.to}</td>
-                <td className="px-4 py-3">{train.time}</td>
-                <td className="px-4 py-3">{train.platform}</td>
-                <td className="px-4 py-3">{train.type}</td>
-                <td className="px-4 py-3">{train.train}</td>
+              <tr key={index} className="hover:bg-[#f9fafb] transition-all">
+                <td className="px-6 py-4">{train.from}</td>
+                <td className="relative right-6 text-gray-400">➝</td>
+                <td className="px-6 py-4">{train.to}</td>
+                <td className="px-6 py-4 font-semibold text-[#111827]">
+                  {train.time}
+                </td>
+                <td className="px-6 py-4 text-center">
+                  <span className="inline-block bg-[#fee9e9] text-[#8B4513] text-xs font-semibold px-4 py-1 rounded-full shadow-sm">
+                    {train.platform}
+                  </span>
+                </td>
+                <td className="px-6 py-4 capitalize text-[#4b5563]">
+                  {train.type}
+                </td>
+                <td className="px-6 py-4 capitalize text-[#4b5563]">
+                  {train.train}
+                </td>
               </tr>
             ))}
           </tbody>
