@@ -13,10 +13,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<NewsFeed />} />
-          <Route path="/trial" element={<Trial />} />
           <Route path="/train" element={<TrainTT />} />
+          {/* Expenses */}
+          {/* Notes */}
           <Route path="/sos" element={<SOS />} />
-          {/* Example for a future route: <Route path="expenses" element={<ExpenseTracker />} /> */}
+          <Route path="/trial" element={<Trial />} />
         </Route>
       </Routes>
     </BrowserRouter>

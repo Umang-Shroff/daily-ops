@@ -58,7 +58,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             </button>
           ))}
 
-          <button className="flex items-center gap-3 bg-red-100 text-red-900 font-semibold rounded-lg px-3 py-2 mt-6 shadow hover:bg-red-200 cursor-pointer transition-all w-full text-left">
+          <button onClick={() => { window.scrollTo({ top: 0, behavior: "smooth" }); navigate("/sos"); onClose(); }} className="flex items-center gap-3 bg-red-100 text-red-900 font-semibold rounded-lg px-3 py-2 mt-6 shadow hover:bg-red-200 cursor-pointer transition-all w-full text-left">
             <AlertCircle size={15} className="text-red-900" />
             SOS
           </button>

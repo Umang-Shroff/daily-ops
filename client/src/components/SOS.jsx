@@ -4,6 +4,7 @@ const SOS = () => {
   const [sections, setSections] = useState([]);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     const fetchSOSData = async () => {
       try {
         const response = await fetch("/sos/emergency.json");
