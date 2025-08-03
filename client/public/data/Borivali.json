@@ -234,7 +234,31 @@
   {
     "from":"BOR",
     "to":"CHG",
-    "time":"06:40",
+    "time":"17:50",
+    "platform":"7",
+    "type":"Fast",
+    "train":"Local"
+  },
+  {
+    "from":"BOR",
+    "to":"CHG",
+    "time":"17:59",
+    "platform":"7",
+    "type":"Fast",
+    "train":"Local"
+  },
+  {
+    "from":"BOR",
+    "to":"CHG",
+    "time":"18:00",
+    "platform":"7",
+    "type":"Fast",
+    "train":"Local"
+  },
+  {
+    "from":"BOR",
+    "to":"CHG",
+    "time":"18:10",
     "platform":"7",
     "type":"Fast",
     "train":"Local"
