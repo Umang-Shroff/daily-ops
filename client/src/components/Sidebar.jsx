@@ -9,6 +9,7 @@ const Sidebar = ({ isOpen, onClose }) => {
   const sideBarData = [
     { label: "News", route: "/" },
     { label: "Train Timetable", route: "/train" },
+    { label: "Today's Lectures", route: "/lecture" },
     { label: "Expense Tracker", route: "/expenses" },
     { label: "Notes", route: "/notes" },
   ];

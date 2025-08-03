@@ -1,0 +1,154 @@
+import { useState } from 'react';
+import { Plus, X, Pencil, Trash2 } from 'lucide-react';
+
+const Notes = () => {
+  const [notes, setNotes] = useState([]);
+  const [isPanelOpen, setIsPanelOpen] = useState(false);
+  const [editIndex, setEditIndex] = useState(null);
+  const [formData, setFormData] = useState({ title: '', content: '' });
+
+  const openPanel = (index = null) => {
+    if (index !== null) {
+      setFormData(notes[index]);
+      setEditIndex(index);
+    } else {
+      setFormData({ title: '', content: '' });
+      setEditIndex(null);
+    }
+    setIsPanelOpen(true);
+  };
+
+  const closePanel = () => {
+    setIsPanelOpen(false);
+    setFormData({ title: '', content: '' });
+    setEditIndex(null);
+  };
+
+  const handleSave = () => {
+    const timestamp = new Date().toLocaleString();
+    const newNote = { ...formData, timestamp };
+
+    if (editIndex !== null) {
+      const updated = [...notes];
+      updated[editIndex] = { ...updated[editIndex], ...newNote };
+      setNotes(updated);
+    } else {
+      setNotes([...notes, newNote]);
+    }
+
+    closePanel();
+  };
+
+  const handleDelete = (index) => {
+    const updated = [...notes];
+    updated.splice(index, 1);
+    setNotes(updated);
+  };
+
+  return (
+    <div className="min-h-screen w-full bg-[#f5f2ee] bg-[url('https://www.transparenttextures.com/patterns/climpek.png')] bg-repeat bg-fixed bg-top font-sans text-[#1a1a1a] px-4 py-6 md:px-12 lg:px-20 relative">
+      {/* Heading */}
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-4xl font-extrabold tracking-tight text-[#2b2b2b]">
+          Quick Capture
+        </h1>
+        <button
+          onClick={() => openPanel()}
+          className="p-2 rounded-full cursor-pointer bg-[#844d28] text-white shadow hover:bg-[#6e3f20] transition"
+        >
+          <Plus size={20} />
+        </button>
+      </div>
+
+      {/* Notes Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {notes.map((note, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl p-4 border border-[#e0deda] shadow hover:shadow-md transition flex flex-col justify-between"
+          >
+            <div>
+              <h2 className="text-lg font-semibold text-[#2b2b2b] mb-2">
+                {note.title}
+              </h2>
+              <p className="text-sm text-[#4b5563] line-clamp-4 mb-3">
+                {note.content}
+              </p>
+              <p className="text-xs text-gray-400 mt-auto">{note.timestamp}</p>
+            </div>
+            <div className="flex justify-end space-x-2 mt-3">
+              <button
+                onClick={() => openPanel(index)}
+                className="text-[#693b1d] cursor-pointer hover:text-[#2b2b2b] transition"
+              >
+                <Pencil size={16} />
+              </button>
+              <button
+                onClick={() => handleDelete(index)}
+                className="text-red-500 cursor-pointer hover:text-red-700 transition"
+              >
+                <Trash2 size={16} />
+              </button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Add/Edit Panel Modal */}
+      {isPanelOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-black/30">
+          <div className="relative bg-white rounded-xl shadow-lg max-w-xl w-full mx-4 md:mx-0 overflow-hidden border border-[#e0deda]">
+            {/* Close Button */}
+            <button
+              onClick={closePanel}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Heading */}
+            <div className="px-6 pt-6 pb-4 border-b border-[#e0deda]">
+              <h1 className="text-3xl font-extrabold tracking-tight text-[#2b2b2b]">
+                {editIndex !== null ? 'Edit Note' : 'Add Note'}
+              </h1>
+            </div>
+
+            {/* Form */}
+            <div className="p-6 space-y-4">
+              <input
+                type="text"
+                value={formData.title}
+                onChange={(e) =>
+                  setFormData({ ...formData, title: e.target.value })
+                }
+                placeholder="Title"
+                className="w-full border border-[#e0deda] rounded-md px-4 py-2 text-sm text-[#2b2b2b] focus:outline-none focus:ring-2 focus:ring-[#844d28]/40"
+              />
+              <textarea
+                rows={6}
+                value={formData.content}
+                onChange={(e) =>
+                  setFormData({ ...formData, content: e.target.value })
+                }
+                placeholder="Write your note..."
+                className="w-full border border-[#e0deda] rounded-md px-4 py-2 text-sm text-[#2b2b2b] resize-none focus:outline-none focus:ring-2 focus:ring-[#844d28]/40"
+              ></textarea>
+            </div>
+
+            {/* Save Button */}
+            <div className="px-6 pb-6 flex justify-end">
+              <button
+                onClick={handleSave}
+                className="bg-[#844d28] cursor-pointer text-white px-6 py-2 rounded-lg font-medium hover:bg-[#6e3f20] transition"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Notes;
