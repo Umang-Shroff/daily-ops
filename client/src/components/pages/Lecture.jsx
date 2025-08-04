@@ -31,7 +31,9 @@ const Lecture = () => {
       <h1 className="text-4xl font-extrabold tracking-tight text-[#2b2b2b] mb-8">
         Today's Timetable
       </h1>
-      <h2 className="text-2xl text-[#693817] font-bold mb-10">{new Date().toLocaleDateString("en-US", { weekday: 'long' })}</h2>
+      <h2 className="text-2xl text-[#693817] font-bold mb-10">
+        {new Date().toLocaleDateString("en-US", { weekday: "long" })}
+      </h2>
       {todayLectures.length > 0 ? (
         <div className="overflow-x-auto border border-[#e0deda] bg-white rounded-xl shadow-sm">
           <table className="min-w-full text-sm text-[#1f2937]">
@@ -54,11 +56,25 @@ const Lecture = () => {
                   }`}
                 >
                   <td className="px-6 py-4 font-mono">
-                    {lecture.start} - {lecture.end}
+                    {parseInt(lecture.start.split(":")[0]) > 12
+                      ? parseInt(lecture.start.split(":")[0]) -
+                        12 +
+                        ":" +
+                        lecture.start.split(":")[1] +
+                        " PM"
+                      : lecture.start + " AM"}{" "}
+                    -{" "}
+                    {parseInt(lecture.end.split(":")[0]) > 12
+                      ? parseInt(lecture.end.split(":")[0]) -
+                        12 +
+                        ":" +
+                        lecture.end.split(":")[1] +
+                        " PM"
+                      : lecture.end + " AM"}
                   </td>
-                  <td className="px-6 py-4">{lecture.subject}</td>
+                  <td className="px-6 py-4 font-semibold">{lecture.subject}</td>
                   <td className="px-6 py-4">{lecture.teacher}</td>
-                  <td className="px-6 py-4">{lecture.room}</td>
+                  <td className="px-6 py-4 font-semibold">{lecture.room}</td>
                 </tr>
               ))}
             </tbody>
