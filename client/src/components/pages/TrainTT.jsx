@@ -71,13 +71,13 @@ const TrainTT = () => {
           </button>
         </div>
         <div
-          className="cursor-pointer duration-300 relative right-5 hover:shadow-md hover:bg-[#fff6f1] rounded-lg px-3 flex justify-center items-center"
+          className="cursor-pointer duration-300 relative right-2 hover:shadow-md hover:bg-[#fff6f1] rounded-lg px-3 flex justify-center items-center"
           onClick={() => setIsMapOpen(true)}
         >
           <Map className="text-[#693b1d]" />
         </div>
       </div>
-
+            
       {/* Timetable */}
       <div className="overflow-y-scroll max-h-[70vh] rounded-xl border border-[#e5e7eb] bg-white shadow-md">
         <table className="min-w-full text-sm text-[#1f2937] relative">
