@@ -10,7 +10,6 @@ router.get("/today", async (req, res) => {
     const today = moment().format("YYYY-MM-DD");
 
     const expenses = await Expense.find({ date: today });
-    console.log("Fetching today's date:", today);
     res.status(200).json(expenses);
   } catch (err) {
     console.error("Error in /today route:", err);
@@ -34,7 +33,7 @@ router.post("/", async (req, res) => {
       // First entry today
       doc = new Expense({
         date: today,
-        entries: [{ title, price }]
+        entries: [{ title, price }],
       });
     } else {
       const existingEntry = doc.entries.find((entry) => entry.title === title);
@@ -63,7 +62,7 @@ router.delete("/:title", async (req, res) => {
     if (!doc) return res.status(404).json({ message: "No entry for today." });
 
     // Remove entry with matching title
-    doc.entries = doc.entries.filter(entry => entry.title !== title);
+    doc.entries = doc.entries.filter((entry) => entry.title !== title);
 
     await doc.save();
 
@@ -80,7 +79,7 @@ router.get("/ledger", async (req, res) => {
     const startOfMonth = moment().startOf("month").format("YYYY-MM-DD");
 
     const expenses = await Expense.find({
-      date: { $gte: startOfMonth }
+      date: { $gte: startOfMonth },
     });
 
     const grouped = {};
@@ -98,21 +97,19 @@ router.get("/ledger", async (req, res) => {
       doc.entries.forEach((entry) => {
         grouped[dateKey].categories.push({
           title: entry.title,
-          price: entry.price
+          price: entry.price,
         });
 
         grouped[dateKey].total += entry.price;
       });
     });
 
-    console.log("Fetched ledger for current month", grouped);
     res.status(200).json(grouped);
   } catch (err) {
     console.error("Error in /ledger route:", err);
     res.status(500).json({ message: "Failed to fetch ledger." });
   }
 });
-
 
 // Delete all expenses not from the current month
 router.delete("/cleanup", async (req, res) => {
@@ -122,7 +119,6 @@ router.delete("/cleanup", async (req, res) => {
     const result = await Expense.deleteMany({
       date: { $not: { $regex: `^${currentMonth}` } },
     });
-    console.log("Cleaning up. Keeping month:", currentMonth);
 
     res.status(200).json({ deleted: result.deletedCount });
   } catch (err) {
@@ -132,4 +128,3 @@ router.delete("/cleanup", async (req, res) => {
 });
 
 module.exports = router;
-
