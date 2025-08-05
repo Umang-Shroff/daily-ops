@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 // Importing routes
 const newsRoutes = require('./routes/news');
+const notesRoutes = require('./routes/notes')
 
 const app = express();
 // Middlewares
@@ -13,6 +14,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/news', newsRoutes);
+app.use('/api/notes',notesRoutes);
 
 // Test Route
 app.get('/api', (req, res) => {
