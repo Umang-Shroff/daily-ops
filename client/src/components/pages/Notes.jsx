@@ -1,48 +1,92 @@
-import { useState } from 'react';
-import { Plus, X, Pencil, Trash2 } from 'lucide-react';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Plus, X, Pencil, Trash2 } from "lucide-react";
 
 const Notes = () => {
   const [notes, setNotes] = useState([]);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
-  const [editIndex, setEditIndex] = useState(null);
-  const [formData, setFormData] = useState({ title: '', content: '' });
+  const [editingId, setEditingId] = useState(null);
+  const [formData, setFormData] = useState({ title: "", content: "" });
 
-  const openPanel = (index = null) => {
-    if (index !== null) {
-      setFormData(notes[index]);
-      setEditIndex(index);
+  const API =
+    import.meta.env.MODE === "production"
+      ? "https://your-production-url.com/api/notes"
+      : "http://localhost:5000/api/notes";
+
+  const fetchNotes = async () => {
+    try {
+      const response = await axios.get(API);
+      setNotes(response.data);
+    } catch (e) {
+      console.error("Error fetching notes:", e);
+    }
+  };
+
+  useEffect(() => {
+    fetchNotes();
+  }, []);
+
+  const handleSave = async () => {
+    if (!formData.title || !formData.content) return;
+    try {
+      if (editingId) {
+        // Update existing note
+        const response = await axios.put(`${API}/${editingId}`, formData);
+        const updatedNote = response.data;
+        setNotes((prev) =>
+          prev.map((note) => (note._id === editingId ? updatedNote : note))
+        );
+      } else {
+        // Create new note
+        const response = await axios.post(API, formData);
+        setNotes((prev) => [...prev, response.data]);
+      }
+      closePanel();
+      alert("Note saved successfully!");
+    } catch (e) {
+      console.error("Error saving note:", e);
+    }
+  };
+
+  const openPanel = (note = null) => {
+    if (note) {
+      setFormData({ title: note.title, content: note.content });
+      setEditingId(note._id);
     } else {
-      setFormData({ title: '', content: '' });
-      setEditIndex(null);
+      setFormData({ title: "", content: "" });
+      setEditingId(null);
     }
     setIsPanelOpen(true);
   };
 
   const closePanel = () => {
     setIsPanelOpen(false);
-    setFormData({ title: '', content: '' });
-    setEditIndex(null);
+    setFormData({ title: "", content: "" });
+    setEditingId(null);
   };
 
-  const handleSave = () => {
-    const timestamp = new Date().toLocaleString();
-    const newNote = { ...formData, timestamp };
+  // const handleSave = () => {
+  //   const timestamp = new Date().toLocaleString();
+  //   const newNote = { ...formData, timestamp };
 
-    if (editIndex !== null) {
-      const updated = [...notes];
-      updated[editIndex] = { ...updated[editIndex], ...newNote };
-      setNotes(updated);
-    } else {
-      setNotes([...notes, newNote]);
+  //   if (editIndex !== null) {
+  //     const updated = [...notes];
+  //     updated[editIndex] = { ...updated[editIndex], ...newNote };
+  //     setNotes(updated);
+  //   } else {
+  //     setNotes([...notes, newNote]);
+  //   }
+
+  //   closePanel();
+  // };
+
+  const handleDelete = async (id) => {
+    try {
+      await axios.delete(`${API}/${id}`);
+      fetchNotes();
+    } catch (err) {
+      console.error("Delete error:", err);
     }
-
-    closePanel();
-  };
-
-  const handleDelete = (index) => {
-    const updated = [...notes];
-    updated.splice(index, 1);
-    setNotes(updated);
   };
 
   return (
@@ -64,7 +108,7 @@ const Notes = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {notes.map((note, index) => (
           <div
-            key={index}
+            key={note._id}
             className="bg-white rounded-xl p-4 border border-[#e0deda] shadow hover:shadow-md transition flex flex-col justify-between"
           >
             <div>
@@ -78,13 +122,13 @@ const Notes = () => {
             </div>
             <div className="flex justify-end space-x-2 mt-3">
               <button
-                onClick={() => openPanel(index)}
+                onClick={() => openPanel(note)}
                 className="text-[#693b1d] cursor-pointer hover:text-[#2b2b2b] transition"
               >
                 <Pencil size={16} />
               </button>
               <button
-                onClick={() => handleDelete(index)}
+                onClick={() => handleDelete(note._id)}
                 className="text-red-500 cursor-pointer hover:text-red-700 transition"
               >
                 <Trash2 size={16} />
@@ -109,7 +153,7 @@ const Notes = () => {
             {/* Heading */}
             <div className="px-6 pt-6 pb-4 border-b border-[#e0deda]">
               <h1 className="text-3xl font-extrabold tracking-tight text-[#2b2b2b]">
-                {editIndex !== null ? 'Edit Note' : 'Add Note'}
+                {editingId !== null ? "Edit Note" : "Add Note"}
               </h1>
             </div>
 
