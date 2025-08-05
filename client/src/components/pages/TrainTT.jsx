@@ -77,7 +77,7 @@ const TrainTT = () => {
           <Map className="text-[#693b1d]" />
         </div>
       </div>
-            
+
       {/* Timetable */}
       <div className="overflow-y-scroll max-h-[70vh] rounded-xl border border-[#e5e7eb] bg-white shadow-md">
         <table className="min-w-full text-sm text-[#1f2937] relative">
@@ -109,7 +109,11 @@ const TrainTT = () => {
                 <td className="relative text-gray-400 ">➝</td>
                 <td className="px-6 py-4 font-serif">{train.to}</td>
                 <td className="px-6 py-4 font-semibold text-[#111827]">
-                  {(parseInt(train.time.split(":")[0],10) > 12 ? (parseInt(train.time.split(":")[0],10)-12) : train.time.split(":")[0])}:{train.time.split(":")[1]} {parseInt(train.time.split(":")[0],10) < 12 ? "AM" : "PM"}
+                  {parseInt(train.time.split(":")[0], 10) > 12
+                    ? parseInt(train.time.split(":")[0], 10) - 12
+                    : train.time.split(":")[0]}
+                  :{train.time.split(":")[1]}{" "}
+                  {parseInt(train.time.split(":")[0], 10) < 12 ? "AM" : "PM"}
                 </td>
                 <td className="px-6 py-4 text-center">
                   <span className="inline-block bg-[#fee9e9] text-[#8B4513] text-xs font-semibold px-4 py-1 rounded-full shadow-sm">
