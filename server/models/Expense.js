@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const expenseEntrySchema = new mongoose.Schema({
   title: { type: String, required: true },
@@ -13,4 +13,4 @@ const expenseSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Expense", expenseSchema);
+module.exports = mongoose.model("Expense", expenseSchema);
