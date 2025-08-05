@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Note = require('../models/Note');
 
+// GET /api/notes 
 router.get('/', async (req, res) => {
   try {
     const notes = await Note.find().sort({ createdAt: -1 });
@@ -11,6 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// POST /api/notes 
 router.post('/', async (req, res) => {
   const { title, content } = req.body;
 
@@ -27,6 +29,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// PUT /api/notes/:id 
 router.put('/:id', async (req, res) => {
   const { title, content } = req.body;
 
@@ -47,6 +50,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// DELETE /api/notes/:id 
 router.delete('/:id', async (req, res) => {
   try {
     const deletedNote = await Note.findByIdAndDelete(req.params.id);
@@ -62,3 +66,10 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+
+
+
