@@ -239,13 +239,19 @@ const Expenses = () => {
               {Object.entries(ledgerData).map(([day, records], i) => (
                 <div
                   key={i}
-                  className="bg-white rounded-lg p-4 mb-4 border border-[#e0deda] shadow-sm"
+                  className="bg-white rounded-lg p-4 border border-[#e0deda] shadow-sm"
                 >
-                  <h3 className="text-lg font-bold mb-2">{day}</h3>
-                  <p className="text-sm text-gray-600 mb-2">
-                    Total: ₹{records.total}
-                  </p>
+                  {/* Header: Date + Total */}
+                  <div className="flex justify-between items-center mb-4">
+                    <h2 className="text-xl font-bold text-[#693b1d] border-l-4 border-[#844d28] pl-3">
+                      {day}
+                    </h2>
+                    <p className="text-sm font-medium text-[#844d28]">
+                      Total: ₹{records.total}
+                    </p>
+                  </div>
 
+                  {/* Category breakdown */}
                   {records.categories.map((rec, j) => (
                     <div key={j} className="flex justify-between">
                       <span>{rec.title}</span>
