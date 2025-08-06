@@ -1,298 +1,3026 @@
 [
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:30",
-    "platform":"4",
-    "type":"Slow",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:02",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"AND",
-    "time":"06:35",
-    "platform":"8",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:04",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:36",
-    "platform":"7",
-    "type":"Fast",
-    "train":"AC"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:07",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"2",
-    "type":"Slow",
-    "train":"Local"
+    "from": "BOR",
+    "to": "AND",
+    "time": "06:09",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:13",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:17",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:19",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:21",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:22",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:25",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:25",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:26",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:30",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "AND",
+    "time": "06:35",
+    "platform": "8",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:36",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:36",
+    "platform": "1",
+    "type": "Fast",
+    "train": "AC"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:40",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:40",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:44",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:46",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:47",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:50",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:51",
+    "platform": "2",
+    "type": "Fast",
+    "train": "AC"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "06:53",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:00",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "AND",
+    "time": "07:03",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:06",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:07",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"06:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:09",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"17:50",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:10",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"17:59",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:13",
+    "platform": "1",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"18:00",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:15",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"12:00",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:19",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"19:10",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:21",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"19:20",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:23",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"19:30",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:25",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
   },
   {
-    "from":"BOR",
-    "to":"CHG",
-    "time":"19:40",
-    "platform":"7",
-    "type":"Fast",
-    "train":"Local"
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:28",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:28",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:31",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:32",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:36",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:40",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:40",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:43",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:46",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:46",
+    "platform": "2",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "07:49",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:53",
+    "platform": "5",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "07:55",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "08:01",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:03",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "08:05",
+    "platform": "8",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:06",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:09",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:11",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:14",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "MUM-CENTRAL",
+    "time": "08:15",
+    "platform": "6",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:16",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:17",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "08:18",
+    "platform": "8",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:19",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "08:22",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:26",
+    "platform": "3",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:30",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:34",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:36",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:38",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:40",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:40",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:43",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:45",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "08:49",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:52",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:55",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "MUM-CENTRAL",
+    "time": "08:56",
+    "platform": "6",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "08:58",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:01",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:02",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:04",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "09:05",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:06",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:06",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:09",
+    "platform": "5",
+    "type": "Slow",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:13",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:15",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:17",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:21",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:22",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:28",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:28",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:31",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "09:33",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:35",
+    "platform": "4",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:38",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:41",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "09:41",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:45",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:48",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "09:50",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:50",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:55",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "09:55",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:00",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:00",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:04",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:05",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:06",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:10",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:12",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "10:14",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:16",
+    "platform": "4",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:18",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:19",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:22",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:22",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:26",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:28",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "10:29",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:31",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:33",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:36",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:36",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "10:39",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:40",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:43",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:47",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:47",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:50",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:53",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:55",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "10:57",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:01",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:04",
+    "platform": "3",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "11:07",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:08",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:13",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:15",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:19",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:20",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:23",
+    "platform": "5",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:23",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "11:26",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:29",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:30",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:35",
+    "platform": "3",
+    "type": "Slow",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:40",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:42",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:46",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:47",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:50",
+    "platform": "8",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "11:50",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:52",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:58",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "11:59",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:02",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "12:03",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:07",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:09",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:11",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:13",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:14",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "12:41",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "12:44",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:45",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:48",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:52",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:54",
+    "platform": "5",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:55",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "12:58",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:01",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:02",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:05",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "13:06",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:10",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:10",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:13",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:15",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:18",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:21",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:22",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "13:24",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:29",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:32",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:34",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:35",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:37",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "13:37",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:40",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "13:42",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:45",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:46",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "13:49",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:51",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:54",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:55",
+    "platform": "3",
+    "type": "Slow",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "13:59",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:01",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:04",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "14:06",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:08",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:09",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:11",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:14",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:17",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:18",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:21",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:23",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "14:24",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:27",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "14:30",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:30",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:35",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:38",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:40",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:41",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:43",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "14:44",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:47",
+    "platform": "9",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:48",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "14:50",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:54",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "14:56",
+    "platform": "1",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "14:59",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:03",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "15:05",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:09",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:09",
+    "platform": "3",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:12",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:14",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:17",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:18",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:23",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:23",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "15:26",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:30",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:32",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:36",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:40",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "15:43",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:43",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:47",
+    "platform": "5",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:48",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:52",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "15:53",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:54",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:57",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "15:58",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:01",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:03",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:06",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:07",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "16:12",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:15",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "16:16",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:18",
+    "platform": "2",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:20",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:21",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:24",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "16:25",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "16:27",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:28",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:31",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:32",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:34",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "16:37",
+    "platform": "6",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "16:38",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "16:39",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:42",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:43",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "16:47",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:50",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:53",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:55",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "16:56",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "17:00",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:01",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:04",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:05",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:06",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:10",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:10",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "17:12",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:13",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:17",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "17:20",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:23",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:27",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:28",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:31",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:33",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:36",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:39",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:44",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:45",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "17:47",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:48",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:50",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "17:54",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "17:57",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "17:57",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:01",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:04",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "18:04",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:08",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:08",
+    "platform": "9",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:13",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:13",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:16",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:19",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:19",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "18:22",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:24",
+    "platform": "9",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:24",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:27",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "18:30",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:32",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:37",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "18:40",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "18:40",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:43",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:47",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:48",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:52",
+    "platform": "9",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:52",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "18:54",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "18:58",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "18:58",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:00",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:01",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:05",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "19:08",
+    "platform": "5",
+    "type": "Slow",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:10",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:10",
+    "platform": "9",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:11",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:13",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:16",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:20",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:21",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "19:23",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:25",
+    "platform": "2",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:26",
+    "platform": "8",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:27",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:33",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:38",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:43",
+    "platform": "3",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "19:47",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:48",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:49",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:51",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:52",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:54",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "19:55",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "19:57",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "19:57",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:02",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:04",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "20:05",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:11",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:16",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:19",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:20",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:23",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "20:24",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:26",
+    "platform": "5",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "BANDRA",
+    "time": "20:27",
+    "platform": "6",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "20:30",
+    "platform": "5",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:30",
+    "platform": "4",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:34",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "20:37",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:39",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:41",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "DADAR",
+    "time": "20:45",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:46",
+    "platform": "4",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:50",
+    "platform": "7",
+    "type": "Fast",
+    "train": "AC"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:50",
+    "platform": "2",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:53",
+    "platform": "7",
+    "type": "Fast",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "AND",
+    "time": "20:56",
+    "platform": "5",
+    "type": "Slow",
+    "train": "Local"
+  },
+  {
+    "from": "BOR",
+    "to": "CHG",
+    "time": "20:59",
+    "platform": "1",
+    "type": "Slow",
+    "train": "Local"
   }
 ]

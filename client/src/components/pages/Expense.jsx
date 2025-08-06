@@ -32,6 +32,28 @@ const COLORS = [
 ];
 
 const Expenses = () => {
+
+  const access_password = "madhav";
+  const [authenticated, setAuthenticated] = useState(false);
+  const [inputPass, setInputPass] = useState("");
+
+  useEffect(() => {
+    document.body.style.overflow = authenticated ? "auto" : "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [authenticated]);
+
+  const handleCheckPassword = () => {
+    if (inputPass === access_password) {
+      setAuthenticated(true);
+    } else {
+      alert("Incorrect passkey");
+    }
+  };
+
+  
+
   const [view, setView] = useState("add");
   const [showPanel, setShowPanel] = useState(false);
   const [title, setTitle] = useState("");
@@ -120,6 +142,28 @@ const Expenses = () => {
   };
 
   return (
+    <>
+    {!authenticated ? (
+      <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#f5f2ee] backdrop-blur-md">
+        <div className="bg-white shadow-md p-6 rounded-xl border border-[#ccc] w-[90%] max-w-sm">
+          <h2 className="text-xl font-semibold mb-4 text-center text-[#693b1d]">Enter Passkey to Access Expenses</h2>
+          <input
+            type="password"
+            className="w-full p-2 border border-gray-300 rounded-lg mb-4 outline-none focus:ring-2 focus:ring-[#693b1d]"
+            placeholder="Enter passkey..."
+            value={inputPass}
+            onChange={(e) => setInputPass(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && handleCheckPassword()}
+          />
+          <button
+            onClick={handleCheckPassword}
+            className="w-full cursor-pointer bg-[#693b1d] text-white py-2 rounded-lg hover:bg-[#512f16] transition"
+          >
+            Unlock
+          </button>
+        </div>
+      </div>
+    ):(
     <div className="min-h-screen w-full  px-6 py-8 font-sans text-[#1a1a1a]">
       <div className="flex justify-center mb-6">
         <div className="flex bg-[#f1e4db] border border-[#d8c0af] rounded-full p-[3px] shadow-md">
@@ -314,7 +358,8 @@ const Expenses = () => {
           </div>
         </div>
       )}
-    </div>
+    </div>)}
+    </>
   );
 };
 
