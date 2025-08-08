@@ -10,8 +10,23 @@ const notesRoutes = require("./routes/notes");
 const expensesRoutes = require("./routes/expenses");
 
 const app = express();
+
+const allowedOrigins = [
+  "https://myfrontend.com", // your production frontend
+  "http://localhost:5173"   // dev frontend
+];
 // Middlewares
-app.use(cors());
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true
+}));
+app.disable("x-powered-by");
 app.use(express.json());
 
 // Routes

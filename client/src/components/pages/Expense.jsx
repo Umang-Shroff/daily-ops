@@ -16,9 +16,9 @@ const categorySuggestions = [
   "Food",
   "Travel",
   "Stationery",
-  "Snacks",
-  "College Fees",
-  "Books",
+  "Clothes",
+  "Shopping",
+  "Entertainment",
   "Misc",
 ];
 
