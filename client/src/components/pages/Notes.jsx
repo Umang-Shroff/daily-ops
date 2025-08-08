@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Plus, X, Pencil, Trash2 } from "lucide-react";
 import { toast, Toaster } from "react-hot-toast";
+import bcrypt from "bcryptjs";
 
 const Notes = () => {
-  
-  const access_password = "madhav";
+  // madhav
+  const access_password = "$2b$10$tUGkt98XnSTXzMmX83xtcu66oao79jaeMrc8QgqMKxbNgqf5hFy2W";
   const [authenticated, setAuthenticated] = useState(false);
   const [inputPass, setInputPass] = useState("");
 
@@ -22,13 +23,16 @@ const Notes = () => {
   }, [authenticated]);
 
   const handleCheckPassword = () => {
-    if (inputPass === access_password) {
-      setAuthenticated(true);
-    } else {
-      alert("Incorrect passkey");
-    }
+    bcrypt.compare(inputPass, access_password, (err, res) => {
+      if (err) {
+        console.error("Error comparing passwords", err);
+      } else if (res) {
+        setAuthenticated(true);
+      } else {
+        alert("Incorrect passkey");
+      }
+    });
   };
-
 
   const API =
     import.meta.env.MODE === "production"
