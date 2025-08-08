@@ -15,9 +15,16 @@ const NewsFeed = () => {
     setLoading(true);
     try {
       const response = await axios.get(API);
-      setArticles(response.data);
+
+      if (Array.isArray(response.data)) {
+        setArticles(response.data);
+      } else {
+        console.error("Unexpected API response:", response.data);
+        setArticles([]);
+      }
     } catch (error) {
       console.error("Error fetching news:", error);
+      setArticles([]);
     } finally {
       setLoading(false);
     }
@@ -35,19 +42,18 @@ const NewsFeed = () => {
           Headlines
         </h1>
         <button
-          onClick={() => {
-            window.location.reload();
-          }}
-          className="flex items-center gap-2 cursor-pointer text-sm bg-[#fff6f1] hover:bg-[#fff5ec] hover:shadow-lg border border-[#dad6d0] text-[#333] px-4 py-2 rounded-xl transition-all duration-300 shadow-md"
+          onClick={fetchNews}
+          className="flex items-center gap-2 cursor-pointer text-sm bg-[#fff6f1] hover:bg-[#fff5ec] hover:shadow-lg border border-[#dad6d0] text-[#333] px-4 py-2 rounded-xl transition-all duration-300 shadow-md disabled:opacity-50"
+          disabled={loading}
         >
-          <RefreshCw size={16} />
-          Refresh
+          <RefreshCw size={16} className={loading ? "animate-spin" : ""} />
+          {loading ? "Refreshing..." : "Refresh"}
         </button>
       </div>
 
       {loading && articles.length === 0 ? (
         <p className="text-gray-500 text-center">Loading tech news...</p>
-      ) : (
+      ) : articles.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {articles.map((article, index) => (
             <a
@@ -73,13 +79,19 @@ const NewsFeed = () => {
                   {article.description}
                 </p>
                 <p className="text-xs text-[#999] mt-4">
-                  {article.source.name} &bull;{" "}
-                  {new Date(article.publishedAt).toLocaleDateString()}
+                  {article.source?.name} &bull;{" "}
+                  {article.publishedAt
+                    ? new Date(article.publishedAt).toLocaleDateString()
+                    : ""}
                 </p>
               </div>
             </a>
           ))}
         </div>
+      ) : (
+        <p className="text-gray-500 text-center">
+          No news available right now.
+        </p>
       )}
     </div>
   );
