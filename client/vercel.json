@@ -1,8 +1,8 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "ignoreFiles": [
-    "**/node_modules/**"
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
