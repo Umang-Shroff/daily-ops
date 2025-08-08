@@ -12,7 +12,7 @@ const expensesRoutes = require("./routes/expenses");
 const app = express();
 
 const allowedOrigins = [
-  "https://daily-ops-gamma.vercel.app/", // your production frontend
+  "https://daily-ops-gamma.vercel.app", // your production frontend
   "http://localhost:5173"   // dev frontend
 ];
 // Middlewares

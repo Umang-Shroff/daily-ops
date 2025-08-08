@@ -6,10 +6,15 @@ const NewsFeed = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const API =
+    import.meta.env.MODE === "production"
+      ? "https://daily-ops.onrender.com/api/news"
+      : "http://localhost:5000/api/news";
+
   const fetchNews = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("/api/news");
+      const response = await axios.get(API);
       setArticles(response.data);
     } catch (error) {
       console.error("Error fetching news:", error);

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Map, X } from "lucide-react";
 import { useRef } from "react";
-import bcrypt from "bcryptjs";
 
 const TrainTT = () => {
   const [direction, setDirection] = useState("BOR");
@@ -10,12 +9,6 @@ const TrainTT = () => {
   const [isMapOpen, setIsMapOpen] = useState(false);
   const rowRefs = useRef([]);
   rowRefs.current = [];
-  const access_password = "madhav"; // Replace with your actual password
-  useEffect(() => {
-    bcrypt.hash(access_password, 10, (err, hashedPassword) => {
-    console.log(hashedPassword);
-  });
-  },[])
 
   const timeToMinutes = (time) => {
     const [hours, minutes] = time.split(":").map(Number);
