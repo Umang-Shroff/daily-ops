@@ -9,7 +9,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import moment from "moment";
+import { toast, Toaster } from "react-hot-toast";
 
 const categorySuggestions = [
   "Food",
@@ -78,6 +78,17 @@ const Expenses = () => {
       }
     } catch (e) {
       console.error("Error fetching expenses", e);
+      toast.error("Note saved successfully!", {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
       setExpenses([]);
     }
   };
@@ -103,6 +114,17 @@ const Expenses = () => {
       setTitle("");
       setPrice("");
       setShowPanel(false);
+      toast.success("Expense added", {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
     } catch (e) {
       console.error("Error adding expense", e);
     }
@@ -112,8 +134,30 @@ const Expenses = () => {
     try {
       await axios.delete(`${API}/${cat}`);
       fetchExpenses(); // Refetch to update
+      toast.success("Expense Deleted", {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
     } catch (e) {
       console.error("Error deleting", e);
+      toast.error("Error deleting expense!", e, {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
     }
   };
 
@@ -138,11 +182,31 @@ const Expenses = () => {
       setLedgerOpen(true);
     } catch (e) {
       console.error("Ledger fetch error", e);
+      toast.error("Error fetching ledger data!", e, {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
     }
   };
 
   return (
     <>
+    <Toaster
+        containerStyle={{
+          top: 80,
+          left: 20,
+          bottom: 20,
+          right: 20,
+        }}
+        className="z-50"
+      />
     {!authenticated ? (
       <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#f5f2ee] backdrop-blur-md">
         <div className="bg-white shadow-md p-6 rounded-xl border border-[#ccc] w-[90%] max-w-sm">

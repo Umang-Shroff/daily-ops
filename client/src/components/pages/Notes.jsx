@@ -4,10 +4,31 @@ import { Plus, X, Pencil, Trash2 } from "lucide-react";
 import { toast, Toaster } from "react-hot-toast";
 
 const Notes = () => {
+  
+  const access_password = "madhav";
+  const [authenticated, setAuthenticated] = useState(false);
+  const [inputPass, setInputPass] = useState("");
+
   const [notes, setNotes] = useState([]);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
   const [editingId, setEditingId] = useState(null);
   const [formData, setFormData] = useState({ title: "", content: "" });
+
+  useEffect(() => {
+    document.body.style.overflow = authenticated ? "auto" : "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [authenticated]);
+
+  const handleCheckPassword = () => {
+    if (inputPass === access_password) {
+      setAuthenticated(true);
+    } else {
+      alert("Incorrect passkey");
+    }
+  };
+
 
   const API =
     import.meta.env.MODE === "production"
@@ -20,6 +41,17 @@ const Notes = () => {
       setNotes(response.data);
     } catch (e) {
       console.error("Error fetching notes:", e);
+      toast.error("Error fetching notes!", {
+        style: {
+          border: "1px solid #713200",
+          padding: "16px",
+          color: "#713200",
+        },
+        iconTheme: {
+          primary: "#713200",
+          secondary: "#FFFAEE",
+        },
+      });
     }
   };
 
