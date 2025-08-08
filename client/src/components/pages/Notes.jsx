@@ -36,7 +36,7 @@ const Notes = () => {
 
   const API =
     import.meta.env.MODE === "production"
-      ? "https://your-production-url.com/api/notes"
+      ? "https://daily-ops.onrender.com/api/notes"
       : "http://localhost:5000/api/notes";
 
   const fetchNotes = async () => {

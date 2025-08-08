@@ -68,7 +68,7 @@ const Expenses = () => {
 
   const API =
     import.meta.env.MODE === "production"
-      ? "https://your-production-url.com/api/expenses"
+      ? "https://daily-ops.onrender.com/api/expenses"
       : "http://localhost:5000/api/expenses";
 
   const fetchExpenses = async () => {
